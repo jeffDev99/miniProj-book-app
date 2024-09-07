@@ -5,7 +5,7 @@ import styles from "./SearchBox.module.css"
 export default function SearchBox({search, setSearch , serachHandler}) {
   return (
     <div className={styles.search}>
-        <input type="text" placeholder='Search ...' value={search} onChange={e=>setSearch(e.target.value.toLowerCase().trim())}/>
+        <input type="text" placeholder='Search ...' value={search} onChange={e=>setSearch(e.target.value.toLowerCase())}/>
         <button onClick={serachHandler}><IoSearch /></button>
     </div>
   )
